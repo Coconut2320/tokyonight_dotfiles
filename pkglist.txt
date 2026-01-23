@@ -28,3 +28,5 @@ cava
 gnome-clocks
 vlc
 vlc-plugins-all
+waybar
+nwg-look
