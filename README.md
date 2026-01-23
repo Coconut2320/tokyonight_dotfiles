@@ -5,9 +5,10 @@ Thank you to https://github.com/0xsch1zo/Kvantum-Tokyo-Night for the kvantum the
 Thank you to https://github.com/w8ste/Tokyonight-rofi-theme for the rofi theme. 
 Thank you do Garuda Linux Mokka, Omarchy, and PeppermintOS for wallpapers.
 
-Note: These dotfiles require fish shell as default.
+Note: These dotfiles require fish shell as default. Also, these dotfiles work on Arch (btw) but may or may not work on other distros.
 
 # Installation Instrustions
+# THIS NEEDS TO BE DONE ON A FRESH INSTALL OF YOUR DISTRO
 Scroll to manual section if you are not using Arch (btw) or an Arch based distro.
 
 1. Run this to install git and fish and set your default shell to fish:
@@ -29,3 +30,17 @@ git clone https://github.com/Coconut2320/tokyonight_dotfiles.git && cd tokyonigh
 
 ## Manual
 This is the only working method on distros that are not Arch or Arch based.
+
+1. Install fish and git.
+2. Change your terminal shell to fish.
+3. Restart your computer.
+4. Run this:
+```fish
+cd ~/Downloads
+git clone https://github.com/Coconut2320/tokyonight_dotfiles.git && cd tokyonight_dotfiles
+```
+5. Install everything in install.txt.
+6. Run this:
+```fish
+cd ~/Downloads/tokyonight_dotfiles
+cp -r .config/* ~/.config
