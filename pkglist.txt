@@ -30,3 +30,4 @@ vlc
 vlc-plugins-all
 waybar
 nwg-look
+flatpak
