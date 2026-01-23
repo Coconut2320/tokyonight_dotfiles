@@ -39,7 +39,7 @@ This is the only working method on distros that are not Arch or Arch based.
 cd ~/Downloads
 git clone https://github.com/Coconut2320/tokyonight_dotfiles.git && cd tokyonight_dotfiles
 ```
-5. Install everything in install.txt.
+5. Install everything in pkglist.txt.
 6. Run this:
 ```fish
 cd ~/Downloads/tokyonight_dotfiles
