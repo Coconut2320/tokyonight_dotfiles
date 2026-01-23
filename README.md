@@ -8,7 +8,7 @@ Thank you do Garuda Linux Mokka, Omarchy, and PeppermintOS for wallpapers.
 Note: These dotfiles require fish shell as default. Also, these dotfiles work on Arch (btw) but may or may not work on other distros.
 
 # Installation Instrustions
-# THIS NEEDS TO BE DONE ON A FRESH INSTALL OF YOUR DISTRO. WARNING: THIS WILL OVERRIDE YOUR ~/.config FOLDER!
+# This needs to be done on a fresh install of your distro. WARNING: THIS WILL OVERRIDE YOUR ~/.config FOLDER!
 Scroll to manual section if you are not using Arch (btw) or an Arch based distro.
 
 1. Run this to install git and fish and set your default shell to fish:
