@@ -44,5 +44,6 @@ git clone https://github.com/Coconut2320/tokyonight_dotfiles.git && cd tokyonigh
 ```fish
 cd ~/Downloads/tokyonight_dotfiles
 cp -r .config/* ~/.config
+cp -r .vscode/* ~/.vscode
 ```
 7. Install vscode and wlogout
