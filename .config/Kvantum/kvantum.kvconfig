@@ -1,0 +1,6 @@
+[General]
+theme=Kvantum-Tokyo-Night
+
+[Applications]
+Default=peazip
+Kvantum-Tokyo-Night=peazip

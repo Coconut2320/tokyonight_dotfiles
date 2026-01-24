@@ -1,0 +1,95 @@
+* {
+    border: none;
+    font-family: "JetBrains Mono Nerd Font", Regular;
+    font-size: 14px;
+    color: #c0caf5; /* Tokyo Night Foreground */
+}
+
+window#waybar {
+    background: rgba(26, 27, 38, 0.6); /* Tokyo Night Navy with transparency */
+}
+
+/*-----module groups----*/
+.modules-right {
+    margin-right: 1px;
+}
+
+.modules-left {
+    margin-left: 1px;
+}
+
+/*-----modules indv----*/
+#workspaces button {
+    padding: 1px 5px;
+    background-color: transparent;
+    color: #565f89; /* Inactive workspace color */
+}
+
+#workspaces button.active {
+    color: #7aa2f7; /* Tokyo Night Blue */
+    background: transparent;
+}
+
+#clock,
+#temperature,
+#network,
+#pulseaudio,
+#custom-tw-on,
+#idle_inhibitor,
+#custom-power,
+#language,
+#tray,
+#custom-cava {
+    padding: 3px 10px;
+}
+
+/*----- CAVA Visualizer ----*/
+#custom-cava {
+    color: #7aa2f7; /* Blue bars */
+    font-family: "JetBrains Mono Nerd Font", "JetBrainsMono NF";
+    font-size: 16px;
+}
+
+/*----- Volume Drawer & Slider ----*/
+#pulseaudio {
+    color: #bb9af7; /* Magenta volume icon */
+}
+
+/* The bar background */
+#pulseaudio-slider trough {
+    min-width: 80px;
+    min-height: 8px;
+    background-color: #24283b;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+/* The filled part of the bar */
+#pulseaudio-slider highlight {
+    min-height: 8px;
+    background-color: #7aa2f7;
+    border-radius: 5px;
+}
+
+/* The draggable knob */
+#pulseaudio-slider slider {
+    min-height: 14px;
+    min-width: 14px;
+    background-color: #f7768e; /* Red/Pink knob */
+    border-radius: 50%;
+}
+
+/*-----Indicators----*/
+#pulseaudio.muted {
+    color: #f7768e;
+}
+
+#temperature.critical {
+    color: #f7768e;
+}
+
+#tray menu {
+    background-color: #1a1b26;
+    color: #c0caf5;
+    border: 1px solid #414868;
+}

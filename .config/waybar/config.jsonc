@@ -1,0 +1,150 @@
+{
+    "height": 30,
+    "spacing": 4,
+
+    "modules-left": [
+        "hyprland/workspaces",
+        "tray",
+        "custom/tw-on"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "custom/cava",
+        "network",
+        "temperature",
+        "hyprland/language",
+        "idle_inhibitor",
+        "group/volume",
+        "custom/power"
+    ],
+
+    "hyprland/workspaces": {
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
+        "all-outputs": false,
+        "on-click": "activate",
+        "format": "{icon}",
+        "format-icons": {
+            "urgent": "",
+            "active": "",
+            "default": ""
+        }
+    },
+
+    "tray": {
+        "icon-size": 13,
+        "tooltip": false,
+        "spacing": 10
+    },
+
+    "custom/tw-on": {
+        "format": "{}",
+        "interval": 40,
+        "exec": "bash $HOME/.config/waybar/scripts/check_via_tw_api.sh",
+        "exec-if": "exit 0",
+        "tooltip": false
+    },
+
+    "custom/cava": {
+        "exec": "bash $HOME/.config/waybar/scripts/cava.sh",
+        "format": "{}",
+        "tooltip": false
+    },
+
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        }
+    },
+
+    "clock": {
+        "timezone": "America/Indiana/Indianapolis",
+        "locale": "en_US.UTF-8",
+        "format": "{:%H:%M}",
+        "tooltip-format": "<tt>  {calendar}</tt>",
+        "format-alt": " {:%a, %d %b %Y} ",
+        "calendar": {
+            "weeks-pos": "none",
+            "on-scroll": 1,
+            "format": {
+                "months": "<span color='#8fbcbb'><b>{}</b></span>",
+                "days": "<span color='#8a909e'>{}</span>",
+                "weeks": "<span color='#7851a9'><b>W{:%U}</b></span>",
+                "weekdays": "<span color='#81a1c1'><b>{}</b></span>",
+                "today": "<span color='#6c5280'><b>{}</b></span>"
+            }
+        },
+        "actions": {
+            "on-click-forward": "tz_up",
+            "on-click-backward": "tz_down",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
+    },
+
+    "network": {
+        "format-wifi": " {signalStrength}%",
+        "format-ethernet": " {bandwidthDownBits}   | {bandwidthUpBits}   | 󰈀 ",
+        "tooltip-format": "{ipaddr}{essid} | {ifname} via {gwaddr}",
+        "format-linked": " {ifname} (No IP)",
+        "format-disconnected": "⚠ Disconnected",
+        "format-alt": "Wifi connected",
+        "interval": 2
+    },
+
+    "temperature": {
+        "critical-threshold": 80,
+        "format-critical": "{temperatureC}°C",
+        "format": "{temperatureC}°C"
+    },
+
+    "hyprland/language": {
+        "format": "[{}]",
+        "format-de": "de",
+        "format-no": "no"
+    },
+
+    "group/volume": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 500,
+            "children-class": "not-volume",
+            "transition-left-to-right": false
+        },
+        "modules": [
+            "pulseaudio",
+            "pulseaudio/slider"
+        ]
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "sh ~/.config/scripts/mic-toggle.sh",
+        "on-click-middle": "sh ~/.config/scripts/audio_output_switch.sh"
+    },
+
+    "pulseaudio/slider": {
+        "min": 0,
+        "max": 100,
+        "orientation": "horizontal"
+    },
+
+    "custom/power": {
+        "format": "⏻ ",
+        "tooltip": false,
+        "on-click": "wlogout"
+    }
+}

@@ -1,0 +1,12 @@
+# Window Style & Blur
+window-decoration = false
+background-opacity = 0.9
+background-blur-radius = 20
+
+# Cursor & Interaction
+cursor-style = block
+shell-integration = fish
+
+# Performance & Theme
+theme = TokyoNight
+window-save-state = "never"
