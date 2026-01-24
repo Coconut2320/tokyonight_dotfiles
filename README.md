@@ -28,7 +28,19 @@ git clone https://github.com/Coconut2320/tokyonight_dotfiles.git && cd tokyonigh
 chmod +x install.fish
 ./install.fish
 ```
-
+5. Install jdk17 temurin:
+```fish
+yay -S jdk17-temurin
+clear
+java -version && javac -version
+```
+6. Install vscode extensions:
+   rust
+   python
+   java
+   tokyo night
+7. Set vscode theme to tokyonight storm
+   
 ## Manual
 This is the only working method on distros that are not Arch or Arch based.
 
@@ -48,3 +60,10 @@ cp -r .config/* ~/.config
 cp -r .vscode/* ~/.vscode
 ```
 7. Install vscode and wlogout
+8. Install vscode extensions
+   tokyo night
+   rust
+   python
+   java
+9. Install temurin jdk 17
+10. set vscode theme to tokyonight storm
