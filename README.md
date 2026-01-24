@@ -25,6 +25,7 @@ git clone https://github.com/Coconut2320/tokyonight_dotfiles.git && cd tokyonigh
 ```
 4. Run the installer:
 ```fish
+chmod +x install.fish
 ./install.fish
 ```
 
