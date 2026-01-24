@@ -67,3 +67,4 @@ cp -r .vscode/* ~/.vscode
    java
 9. Install temurin jdk 17
 10. set vscode theme to tokyonight storm
+11. Copy every wallpaper in the Wallpapers folder to /home/$USER/Pictures/Hyprland_Wallpapers

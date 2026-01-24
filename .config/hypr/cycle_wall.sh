@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Directory where wallpapers are stored
-DIR="/home/xavier/Pictures/Hyprland_Wallpapers"
+DIR="$HOME/Pictures/Hyprland_Wallpapers"
 
 # Get a list of all images in the folder
 WALLPAPERS=($DIR/*)

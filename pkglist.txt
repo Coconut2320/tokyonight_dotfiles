@@ -31,3 +31,4 @@ vlc-plugins-all
 waybar
 nwg-look
 flatpak
+ttf-jetbrains-mono-nerd
